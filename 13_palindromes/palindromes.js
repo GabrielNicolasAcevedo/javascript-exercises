@@ -6,7 +6,9 @@ const palindromes = function (string) {
         // g flag to make it global, otherwise it will take the first match
         .replace(/[^a-z0-9]/g, '')
     let reversedString = cleanString
+        // split converts a string into an array
         .split("")
+        // reverse is an array method that reverses the array order
         .reverse()
         //join methods transforms an array to string
         .join("");
